@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f7f7f7;
+            color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 700px;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            animation: slideDown 1.4s ease;
+        }
+
+        p {
+            font-size: 1.25rem;
+            opacity: 0.7;
+            animation: fadeInText 2s ease;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 550px;
+            border-radius: 18px;
+            margin: 25px auto;
+            display: block;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInText {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .subtext {
+            margin-top: 15px;
+            font-size: 1rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>We’re Coming Soon...</h1>
+        <p>Something exciting is on the way. Stay tuned!</p>
+
+        <!-- Replace the src attribute with your own image -->
+        <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+            alt="Coming Soon Image"
+        />
+
+        <p class="subtext">A fresh new experience is being crafted for you.</p>
+    </div>
+</body>
+</html>
